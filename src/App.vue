@@ -18,7 +18,7 @@
   </main>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import Media from '@/Components/Media.vue'
   import Typewriter from '@/Components/Typewriter.vue'
   import ThemeSwitcher from '@/Components/ThemeSwitcher.vue'

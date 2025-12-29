@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import { computed } from 'vue'
   import flip from '@/Components/Flip.vue'
   import Typewriter from '@/Components/Typewriter.vue'
