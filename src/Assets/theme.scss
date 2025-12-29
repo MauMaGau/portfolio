@@ -1,0 +1,15 @@
+:root {
+  --color-bg: #eee;
+  --color-txt: #555;
+  --color-heading: #222;
+  --color-a: #000;
+  --color-a-hover: #a2a;
+
+  .dark {
+    --color-bg: #111;
+    --color-txt: #bbb;
+    --color-heading: #ddd;
+    --color-a: #fff;
+    --color-a-hover: pink;
+  }
+}
