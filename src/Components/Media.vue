@@ -39,8 +39,7 @@
   })
 
   const imgSrcUrl = computed(() => {
-    console.log(new URL('/Assets/Img/' + props.imgFilename, import.meta.url))
-    return new URL('../Assets/Img/' + props.imgFilename, import.meta.url).href
+    return new URL('/' + props.imgFilename, import.meta.url).href
   })
 </script>
 
