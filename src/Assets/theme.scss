@@ -1,15 +1,23 @@
 :root {
   --color-bg: #eee;
   --color-txt: #555;
+  --color-txt-high-contrast: #000;
+  --color-txt-mid-contrast: #444;
   --color-heading: #222;
   --color-a: #000;
   --color-a-hover: #a2a;
+  --color-a-hover-block: #bbb;
+  --color-section-bg: #ddd;
 
   .dark {
     --color-bg: #111;
     --color-txt: #bbb;
+    --color-txt-high-contrast: #fff;
+    --color-txt-mid-contrast: #bbb;
     --color-heading: #ddd;
     --color-a: #fff;
     --color-a-hover: pink;
+    --color-a-hover-block: #333;
+    --color-section-bg: #333;
   }
 }

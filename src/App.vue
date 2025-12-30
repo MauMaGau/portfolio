@@ -1,16 +1,24 @@
 <template>
-  <p>
-    <ThemeSwitcher></ThemeSwitcher>
-  </p>
+  <div class="header">
+    <p>
+      <ThemeSwitcher></ThemeSwitcher>
+    </p>
+    <Router-link
+      v-if="$route.name !== 'home'"
+      :to="{name: 'home'}"
+    >Home</Router-link>
+  </div>
   <Media
-    description="Full stack design engineer"
     img-filename="face.png"
     img-alt="8-bit avatar of David (better looking than original)."
   >
     <template #title>
       <Typewriter>
-        <h5>David Townsend</h5>
+        <h1>David Townsend</h1>
       </Typewriter>
+    </template>
+    <template #description>
+      <p class="lead">Full stack design engineer</p>
     </template>
   </Media>
   <main>
@@ -24,4 +32,10 @@
   import ThemeSwitcher from '@/Components/ThemeSwitcher.vue'
 </script>
 
-<style scoped></style>
+<style>
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+</style>

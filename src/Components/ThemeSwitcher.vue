@@ -1,13 +1,16 @@
 <template>
-  <span @click="switchTheme">switch</span>
+  <toggleSwitch
+    @click="switchTheme"
+  >
+    Switch
+  </toggleSwitch>
 </template>
+
 <script setup>
+import toggleSwitch from "@/Components/ToggleSwitch.vue"
+
 const switchTheme = () => {
-  document.body.classList.toggle('dark')
+  document.body.classList.add("dark")
+  console.log(document.body.classList)
 }
 </script>
-<style lang="scss" scoped>
-  span {
-    cursor: pointer;
-  }
-</style>

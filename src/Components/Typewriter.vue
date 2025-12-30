@@ -34,16 +34,17 @@ onMounted(() => {
 }
 
 .animate {
-  border-right: 1em solid #ccc;
+  border-right: 1rem solid #ccc;
+  margin-right: -1rem;
   animation:
-    typing 3.5s steps(15, end),
+    typing 5.5s steps(14, end),
     blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
   20% { width: 0 }
-  80% { width: 100% }
+  60% { width: 100% }
 }
 
 @keyframes blink-caret {
