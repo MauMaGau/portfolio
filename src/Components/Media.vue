@@ -71,22 +71,20 @@ const navigate = () => {
 <style lang="scss" scoped>
 .media-object {
   padding-block: .5rem;
-  margin-block: .5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 
   &.md {
-    width: 50%;
-    min-width: 200px;
+    flex-basis: calc(50% - 1rem);
+    margin-inline: -.5rem;
+    padding-inline: .5rem;
   }
 
   &.has-view {
     cursor: pointer;
     &:hover {
       background-color: var(--color-a-hover-block);
-      margin-inline: -.5rem;
-      padding-inline: .5rem;
       border-radius: .5rem;
     }
   }

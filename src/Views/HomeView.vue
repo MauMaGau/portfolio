@@ -54,7 +54,7 @@
       <Media
         img-filename="eb.png"
         img-alt="Screenshot of a half-finished Mars colony simulation game."
-        title="Everybyway.com"
+        title="Everybyway"
       >
         <template #description>
           <p>A journey tracking android app and companion website.</p>
@@ -89,7 +89,7 @@
           <p>
             <Pill>Software engineer</Pill>
             <Pill>Product designer</Pill>
-            <Pill>Full stack design engineer</Pill>
+            <Pill>Design engineer</Pill>
             <Pill>PHP</Pill>
             <Pill>Laravel</Pill>
             <Pill>Vue</Pill>
