@@ -26,29 +26,33 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.typewriter {
-  white-space: nowrap;
-  letter-spacing: .15em;
-  overflow: hidden;
-  cursor: pointer;
-}
+  .typewriter {
+@media only screen and (min-width: 600px) {
+    white-space: nowrap;
+    letter-spacing: .15em;
+    overflow: hidden;
+    cursor: pointer;
+    }
+  }
 
-.animate {
-  border-right: 1rem solid #ccc;
-  margin-right: -1rem;
-  animation:
-    typing 5.5s steps(14, end),
-    blink-caret .75s step-end infinite;
-}
+  .animate {
+@media only screen and (min-width: 600px) {
+    border-right: 1rem solid #ccc;
+    margin-right: -1rem;
+    animation:
+      typing 5.5s steps(14, end),
+      blink-caret .75s step-end infinite;
+    }
+  }
 
 @keyframes typing {
-  from { width: 0 }
-  20% { width: 0 }
-  60% { width: 100% }
+from { width: 0 }
+20% { width: 0 }
+60% { width: 100% }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #ccc; }
+from, to { border-color: transparent }
+50% { border-color: #ccc; }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <toggleSwitch
-    @click="switchTheme"
+    @click.prevent="switchTheme"
   >
     Switch
   </toggleSwitch>
@@ -10,7 +10,7 @@
 import toggleSwitch from "@/Components/ToggleSwitch.vue"
 
 const switchTheme = () => {
-  document.body.classList.add("dark")
+  document.body.classList.toggle("dark")
   console.log(document.body.classList)
 }
 </script>
