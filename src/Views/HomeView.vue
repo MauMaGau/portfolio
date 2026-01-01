@@ -1,15 +1,15 @@
 <template>
   <article>
-    <p class="blurb">Hello! I'm David. I'm a developer, designer, and collaborator. I'm passionate about building experiences that help people.
+    <p class="lead blurb">Hello! I'm David. I'm a developer, designer, and collaborator. I'm passionate about building experiences that help people.
+      <expander teleport-after="article:has(.blurb)">
+        <template #content>
+          <p>I've been making websites for over twenty-five years (grimaces slightly). I almost got kicked out of school for the first website I made, but look at me now Mr Emerson!</p>
+          <p>For the last ten years I've worked on <a href="https://vestd.com">Vestd.com</a>, joining as a founding engineer and helping the baby grow into the leading equity-management platform it is today.</p>
+          <p>As well as software engineering, I've spent three years as a full-time product designer, learning to love and then hate Figma. Now transitioned to a <strong>Full-Stack Design Engineer</strong>, I own big new feature projects from inception to iteration. From brief, research, ideation, prototyping, through to development, testing, deployment, and iteration.</p>
+          <p>I love the breadth, ownership and autonomy of the role. I can pour the wide skillset I've developed over many years into creating products that help humans traverse complex domains with ease and delight.</p>
+        </template>
+      </expander>
     </p>
-    <expander>
-      <template #content>
-        <p>I've been making websites for over twenty-five years (grimaces slightly). I almost got kicked out of school for the first website I made, but look at me now Mr Emerson!</p>
-        <p>For the last ten years I've worked on <a href="https://vestd.com">Vestd.com</a>, joining as a founding engineer and helping the baby grow into the leading equity-management platform it is today.</p>
-        <p>As well as software engineering, I've spent three years as a full-time product designer, learning to love and then hate Figma. Now transitioned to a <strong>Full-Stack Design Engineer</strong>, I own big new feature projects from inception to iteration. From brief, research, ideation, prototyping, through to development, testing, deployment, and iteration.</p>
-        <p>I love the breadth, ownership and autonomy of the role. I can pour the wide skillset I've developed over many years into creating products that help humans traverse complex domains with ease and delight.</p>
-      </template>
-    </expander>
   </article>
 
   <section>
@@ -32,6 +32,7 @@
       </Media>
 
       <Media
+        v-if="false"
         type="md"
         img-filename="eb.png"
         img-alt=""
@@ -135,7 +136,7 @@
           <p>
             <Pill>Personal project</Pill>
             <Pill>Pure JS</Pill>
-            <Pill>Small project</Pill>
+          <Pill>Small project</Pill>
           </p>
         </template>
       </Media>
@@ -155,7 +156,7 @@
           <p>
             <Pill>Personal project</Pill>
             <Pill>jQuery</Pill>
-            <Pill>Small project</Pill>
+          <Pill>Small project</Pill>
           </p>
         </template>
       </Media>

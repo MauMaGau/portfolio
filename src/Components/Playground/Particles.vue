@@ -1,8 +1,12 @@
 <template>
-  <span class="particle">.</span>
-  <span class="particle">.</span>
-  <span class="particle">.</span>
-  <span class="particle">.</span>
+<p>You know what would be silly? A dark-mode switcher that looked like a fire torch. Unlit in light mode, lit in dark mode. And with flames! Let's figure out a way to do that in css.</p>
+  <p>I'm going to start with making a simple particle effect. Something that looks like burning embers rising.</p>
+  <div>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
 </template>
 
 <style lang="scss" scoped>
