@@ -19,13 +19,14 @@
     <transition>
       <div class="expander-container" v-show="show">
         <div></div>
-        <section>
+        <article>
           <slot name="content"></slot>
-        </section>
+        </article>
       </div>
     </transition>
   </Teleport>
 </template>
+
 <script setup>
 import {ref} from 'vue'
 
@@ -57,7 +58,7 @@ const toggle = () => {
   }
 
   svg {
-      animation: rotate 1s ease-out reverse;
+    animation: rotate 1s ease-out reverse;
   }
 
   .read-less svg {
@@ -66,17 +67,25 @@ const toggle = () => {
   }
 
   @keyframes rotate {
-    from { transform: rotateX(0); }
-    to { transform: rotateX(180deg); }
+  from { transform: rotateX(0); }
+  to { transform: rotateX(180deg); }
   }
 }
 
 .expander-container {
   display: grid;
   grid-template-rows: min-content 1fr;
+  position: relative;
 
-  section {
+  article {
+    box-sizing: border-box;
     overflow: hidden;
+    scrollbar-width: 0;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 1rem;
+    background-color: var(--color-section-bg);
+
 
     p {
       margin-bottom: 1.25rem;
@@ -87,8 +96,21 @@ const toggle = () => {
     }
   }
 
+  div:before {
+    display: block;
+    content: "\a0";
+    position: absolute;
+    inset-block-start: 2.1rem;
+    inset-inline-start: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-section-bg);
+    transform: rotateZ(45deg);
+  }
+
   &.v-enter-active,
   &.v-leave-active {
+    // overflow: hidden;
     transition:
       opacity 1.5s ease,
       grid-template-rows 1.5s ease;
@@ -96,6 +118,7 @@ const toggle = () => {
 
   &.v-enter-from,
   &.v-leave-to {
+    // overflow: hidden;
     grid-template-rows: min-content 0fr;
     opacity: 0;
   }

@@ -1,7 +1,7 @@
 <template>
-  <article>
+  <section>
     <p class="lead blurb">Hello! I'm David. I'm a developer, designer, and collaborator. I'm passionate about building experiences that help people.
-      <expander teleport-after="article:has(.blurb)">
+      <expander teleport-after="section:has(.blurb)">
         <template #content>
           <p>I've been making websites for over twenty-five years (grimaces slightly). I almost got kicked out of school for the first website I made, but look at me now Mr Emerson!</p>
           <p>For the last ten years I've worked on <a href="https://vestd.com">Vestd.com</a>, joining as a founding engineer and helping the baby grow into the leading equity-management platform it is today.</p>
@@ -10,7 +10,7 @@
         </template>
       </expander>
     </p>
-  </article>
+  </section>
 
   <section>
     <h2>Playground</h2>
