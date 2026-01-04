@@ -8,16 +8,20 @@
   --color-a-hover: #a2a;
   --color-a-hover-block: #bbb;
   --color-section-bg: #ddd;
+    --color-card-bg-gradient: linear-gradient(120deg, #ddd 0%, #ddd 70%, #ddd 100%);
+    --color-card-border: linear-gradient(45deg, #ccc 0%, #eee 30%, #ccc 100%);
 
   .dark {
-    --color-bg: #111;
+    --color-bg: #141C29;
     --color-txt: #bbb;
     --color-txt-high-contrast: #fff;
     --color-txt-mid-contrast: #bbb;
     --color-heading: #ddd;
     --color-a: #fff;
     --color-a-hover: pink;
-    --color-a-hover-block: #444;
-    --color-section-bg: #333;
+    --color-a-hover-block: rgba(0, 0, 0, .2);
+    --color-section-bg: #1E2A3D;
+    --color-card-bg-gradient: linear-gradient(120deg,rgba(30, 42, 61, 1) 0%, rgba(46, 30, 61, 1) 70%, rgba(30, 42, 61, 1) 100%);
+    --color-card-border: linear-gradient(340deg,rgba(30, 42, 61, .6) 0%, rgba(30, 42, 61, 1) 30%, rgba(30, 42, 61, .6) 100%);
   }
 }

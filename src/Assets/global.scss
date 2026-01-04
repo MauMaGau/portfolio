@@ -65,9 +65,25 @@ body {
 
   section {
     background-color: var(--color-section-bg);
+    background: var(--color-card-bg-gradient);
+    border: 5px;
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
+    position: relative;
+    box-sizing: border-box;
+
+    &:not(:has(.blurb)) {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -5px;
+        border-radius: inherit;
+        background: var(--color-card-border);
+      }
+    }
 
     > article {
       margin-block: 0;
@@ -75,8 +91,9 @@ body {
     }
 
     &:has(.blurb) {
-      background-color: inherit;
+      background: none;
       padding: 0;
+      margin-bottom: 3rem;
     }
   }
 
@@ -99,4 +116,10 @@ body {
 
 .dark img {
   filter: brightness(70%);
+}
+
+.shiki {
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-block: 1rem;
 }

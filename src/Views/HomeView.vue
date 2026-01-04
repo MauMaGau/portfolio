@@ -31,22 +31,21 @@
         </template>
       </Media>
 
-      <Media
-        v-if="false"
-        type="md"
-        img-filename="eb.png"
-        img-alt=""
-        title="Code blocks"
-        :view="{name: 'playground', params: {page: 'PlaygroundParticles'}}"
-      >
-        <template #description>
-          <p>Fun with css particles</p>
-          <p>
-            <Pill>CSS</Pill>
-            <Pill>Animation</Pill>
-          </p>
-        </template>
-      </Media>
+      <!-- <Media -->
+      <!--   type="md" -->
+      <!--   img-filename="eb.png" -->
+      <!--   img-alt="" -->
+      <!--   title="Code blocks" -->
+      <!--   :view="{name: 'playground', params: {page: 'SyntaxHighlight'}}" -->
+      <!-- > -->
+      <!--   <template #description> -->
+      <!--     <p>Fun with css particles</p> -->
+      <!--     <p> -->
+      <!--       <Pill>CSS</Pill> -->
+      <!--       <Pill>Animation</Pill> -->
+      <!--     </p> -->
+      <!--   </template> -->
+      <!-- </Media> -->
     </article>
   </section>
   <section>
