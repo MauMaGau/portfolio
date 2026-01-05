@@ -84,8 +84,7 @@ const toggle = () => {
     margin-bottom: 1rem;
     padding: 2rem;
     border-radius: 0 1rem 1rem 1rem;
-    background-color: var(--color-section-bg);
-
+    background: var(--color-card-bg-gradient);
 
     p {
       margin-bottom: 1.25rem;
@@ -104,13 +103,12 @@ const toggle = () => {
     inset-inline-start: -1.5rem;
     width: 3rem;
     height: 3rem;
-    background-color: var(--color-section-bg);
+    background: var(--color-card-bg-gradient);
     transform: rotateZ(45deg);
   }
 
   &.v-enter-active,
   &.v-leave-active {
-    // overflow: hidden;
     transition:
       opacity 1.5s ease,
       grid-template-rows 1.5s ease;
@@ -118,7 +116,6 @@ const toggle = () => {
 
   &.v-enter-from,
   &.v-leave-to {
-    // overflow: hidden;
     grid-template-rows: min-content 0fr;
     opacity: 0;
   }

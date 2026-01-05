@@ -104,15 +104,15 @@ body {
     flex-wrap: wrap;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+  }
+}
 
-    a {
-      text-decoration: none;
-      color: var(--color-a);
-      &:active, &:hover, &:focus {
-        color: var(--color-a-hover);
-        text-decoration: underline;
-      }
-    }
+a {
+  text-decoration: none;
+  color: var(--color-a);
+  &:active, &:hover, &:focus {
+    color: var(--color-a-hover);
+    text-decoration: underline;
   }
 }
 
