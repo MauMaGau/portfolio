@@ -1,0 +1,103 @@
+.particles li {
+  display:block;
+  position: absolute;
+  width: .1rem;
+  height: .1rem;
+  border-radius:1rem;
+  background-color: blueviolet;
+  box-shadow: 0 0 1rem 1rem blueviolet;
+  top: -100px;
+  opacity: .3;
+  z-index: -1;
+
+  @keyframes particleSize {
+    from {
+      width: .1rem;
+      height: .1rem;
+      opacity: .3;
+    }
+    50% {
+      width: .5rem;
+      height: .5rem;
+      opacity: .1;
+    }
+    100% {
+      width: .1rem;
+      height: .1rem;
+      opacity: .3;
+    }
+  }
+
+  @keyframes particleMove {
+    0% {
+      transform: translateY(100vh);
+    }
+    50% {
+      transform: translateX(200px) translateY(40vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  &:nth-child(1) {
+    left:5%;
+    animation:
+      particleSize 9s linear infinite,
+      particleMove 30s linear 3s infinite reverse;
+  }
+  &:nth-child(2) {
+    left:15%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 20s linear infinite;
+  }
+  &:nth-child(3) {
+    left:25%;
+    animation:
+      particleSize 8.5s linear infinite,
+      particleMove 18s linear 6s infinite;
+  }
+  &:nth-child(4) {
+    left:35%;
+    animation:
+      particleSize 13s linear infinite,
+      particleMove 28s linear 4s infinite;
+  }
+  &:nth-child(5) {
+    left:45%;
+    animation:
+      particleSize 4s linear infinite,
+      particleMove 12s linear 5s infinite reverse;
+  }
+  &:nth-child(6) {
+    left:55%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 22s linear 3s infinite;
+  }
+  &:nth-child(7) {
+    left:65%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 8s linear 1s infinite reverse;
+  }
+  &:nth-child(8) {
+    left:75%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 12s linear 9s infinite;
+  }
+  &:nth-child(9) {
+    left:85%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 28s linear 2s infinite;
+  }
+  &:nth-child(10) {
+    left:95%;
+    animation:
+      particleSize 5s linear infinite,
+      particleMove 12s linear 1s infinite;
+  }
+}

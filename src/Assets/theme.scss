@@ -20,8 +20,8 @@
     --color-a: #fff;
     --color-a-hover: pink;
     --color-a-hover-block: rgba(0, 0, 0, .2);
-    --color-section-bg: #1E2A3D;
-    --color-card-bg-gradient: linear-gradient(120deg,rgba(30, 42, 61, 1) 0%, rgba(46, 30, 61, 1) 70%, rgba(30, 42, 61, 1) 100%);
+    --color-section-bg: rgba(200,210,220, .9);//#1E2A3D;
+    --color-card-bg-gradient: linear-gradient(120deg,rgba(30, 42, 61, .9) 0%, rgba(46, 30, 61, .9) 70%, rgba(30, 42, 61, .9) 100%);
     --color-card-border: linear-gradient(340deg,rgba(30, 42, 61, .6) 0%, rgba(30, 42, 61, 1) 30%, rgba(30, 42, 61, .6) 100%);
   }
 }

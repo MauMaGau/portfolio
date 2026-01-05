@@ -15,7 +15,7 @@
       <h5 v-if="title" v-html="title"></h5>
       <slot v-else name="title"></slot>
       <slot name="description"></slot>
-      <p v-if="description" v-html="description"></p>
+      <p v-if="description" v-html="description" class="mb-0"></p>
     </div>
   </div>
 </template>
@@ -96,5 +96,13 @@ const navigate = () => {
     border-radius: 9rem;
     // box-shadow: 2px 5px 5px #000;
   }
+}
+</style>
+<style>
+.media-object p {
+  margin-bottom: 0;
+}
+.media-object .pill {
+  margin-top: .5rem;
 }
 </style>

@@ -55,6 +55,7 @@
         img-filename="eb.png"
         img-alt="Screenshot of a half-finished Mars colony simulation game."
         title="Everybyway"
+        :view="{name: 'projects', params: {page: 'EB'}}"
       >
         <template #description>
           <p>A journey tracking android app and companion website.</p>
