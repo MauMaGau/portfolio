@@ -1,4 +1,7 @@
-.particles li {
+.particles {
+  display: none;
+}
+.dark .particles li {
   display:block;
   position: absolute;
   width: .1rem;
@@ -30,7 +33,7 @@
 
   @keyframes particleMove {
     0% {
-      transform: translateY(100vh);
+      transform: translateY(110vh);
     }
     50% {
       transform: translateX(200px) translateY(40vh);

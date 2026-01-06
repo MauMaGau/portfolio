@@ -79,6 +79,7 @@
         img-filename="vestd.png"
         img-alt="The glorious Vestd logo"
         title="Vestd"
+        :view="{name: 'projects', params: {page: 'Vestd'}}"
       >
         <template #description>
           <p>The go-to platform for share schemes, equity management, shareholder governance and funding round execution. FCA-authorised, B-Corp and ISO 27001 certified.</p>

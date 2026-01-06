@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h5>EveryByway</h5>
+    <h2>EveryByway</h2>
     <p class="lead">A journey tracking android app and companion website.</p>
     <p>
       <Pill>Personal project</Pill>
@@ -32,7 +32,7 @@
         </p>
         <p>I recruited friends and fellow bikers to test the system and provide feedback.</p>
         <p>It's now very near to a full release on the Android app store.</p>
-        <p>I've taken a break from development over the winter, but I'm super excited to focus on it in the near future and celebrate it's release.</p>
+        <p>I've taken a break from development over the winter, but I'm super excited to focus on it in the near future and celebrate its release.</p>
         <p>But in the meantime, you can see all my journeys on the bike at <a href="https://everybyway.com" target="_blank">everybyway.com</a>.</p>
       </div>
     </article>
