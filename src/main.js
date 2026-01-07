@@ -10,6 +10,7 @@ import SyntaxHighlight from '@/Components/Playground/SyntaxHighlight.vue'
 // Projects
 import EveryByway from '@/Components/Projects/EveryByway.vue'
 import Vestd from '@/Components/Projects/Vestd.vue'
+import Mars from '@/Components/Projects/Mars.vue'
 
 const app = createApp(App)
 
@@ -18,6 +19,7 @@ app
   .component('SyntaxHighlight', SyntaxHighlight)
   .component('EB', EveryByway)
   .component('Vestd', Vestd)
+  .component('Mars', Mars)
 
 app.use(router)
 

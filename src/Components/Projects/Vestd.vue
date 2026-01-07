@@ -27,8 +27,8 @@
           <li>Structured design processes, tightly integrated with wider product and engineering flows.</li>
           <li>Pulled all my experience together into my new role as a full-stack design engineer.</li>
         </ul>
-        <p>Woosh. That's a lot. There's so much detail I could go into. But let's look at a couple of recent case studies.</p>
-        <h3>Case studies</h3>
+        <p>Woosh. That's a lot. There's so much detail I could go into. If you'd like to know more just reach out. I'd be happy to walk through a few case studies.</p>
+
 
       </div>
     </article>
@@ -37,7 +37,6 @@
 
 
 <script setup>
-import { computed } from 'vue'
 import Pill from '@/Components/Pill.vue'
 
 const imgSrcUrl = (imgFilename) => {

@@ -104,6 +104,7 @@
         img-filename="th6.jpg"
         img-alt="Screenshot of a half-finished Mars colony simulation game."
         title="How to Die on Mars"
+        :view="{name: 'projects', params: {page: 'Mars'}}"
       >
         <template #description>
           <p>C#/Unity colony survival game diving deep into elegant OOP.</p>
