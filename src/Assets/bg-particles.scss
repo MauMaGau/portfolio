@@ -1,6 +1,9 @@
 .particles {
   display: none;
 }
+.dark .particles {
+  display: block;
+}
 .dark .particles li {
   display:block;
   position: absolute;
